@@ -1,0 +1,13 @@
+---
+layout: default
+title: toto's blog
+subtitle: I write what I have discovered or played with recently.
+---
+
+<section class="p-strip is-bordered">
+    <div class="row">
+        {% for post in site.posts %}
+        {% include card.html %}
+        {% endfor %}
+    </div>
+</section>

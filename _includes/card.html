@@ -1,0 +1,6 @@
+<div class="col-4 p-card--highlighted">
+    <a href="{{ post.url }}"> <h3 class="p-card__title">{{ post.title }}</h3></a>
+    <p class="p-card__content">{{ post.summary }}</p>
+    <br />
+    <p class="p-card__content">{{ post.date | date_to_long_string }}</p>
+</div>
