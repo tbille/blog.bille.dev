@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Writing more
+title: ✍️ Writing more
 summary: This is the start of a new adventure
 date: 2020-08-08T23:48:36.818Z
 ---
