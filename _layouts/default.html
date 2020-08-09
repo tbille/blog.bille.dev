@@ -1,5 +1,5 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en-GB">
     <head>
         <!-- Global site tag (gtag.js) - Google Analytics -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=UA-168683396-2"></script>
@@ -15,10 +15,40 @@
         <meta name="viewport" content="width=device-width, minimum-scale=1.0" />
         <meta https-equiv="Accept-CH" content="DPR, Viewport-Width, Width" />
 
-        <title>{{ site.title }}</title>
+        <title>
+            {% if page.title %}{{ page.title }} | {{ site.title }}{% else %}{{ site.title }}{% endif %}
+        </title>
+
+        <link rel="preconnect" href="https://www.googletagmanager.com" />
+        <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
+        <link rel="preconnect" href="https://www.google-analytics.com" />
+        <link rel="dns-prefetch" href="https://www.google-analytics.com" />
+        <link rel="preconnect" href="https://www.gstatic.com" />
+        <link rel="dns-prefetch" href="https://www.gstatic.com" />
+        <link href="https://fonts.googleapis.com/css?family=Noto+Sans:400,700&display=swap" rel="stylesheet">
 
         <link rel="stylesheet" href="https://assets.ubuntu.com/v1/vanilla-framework-version-2.16.0.min.css" />
         <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+
+
+
+        <meta name="author" content="toto"/>
+        <meta
+            name="copyright"
+            content="&copy; {{ site.time | date: '%Y' }} toto Corp."
+        />
+        <link rel="alternate" href="https://blog.bille.dev" hreflang="en-GB" />
+
+        <meta
+            name="description"
+            content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}"
+        />
+
+        <link
+            rel="canonical"
+            href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}"
+        />
+
     </head>
     <body>
         <header id="navigation" class="p-navigation is-dark">
@@ -66,7 +96,7 @@
                     <p>© 2020 <a href="https://toto.space">Toto Corp</a> </p>
                     <ul class="p-inline-list--middot">
                         <li class="p-inline-list__item">
-                            <a href="#"><small>Report a bug on this site</small></a>
+                            <a href="https://github.com/tbille/blog.bille.dev/issues/new"><small>Report a bug on this site</small></a>
                         </li>
                     </ul>
                     <span class="u-off-screen"><a href="#">Go to the top of the page</a></span>
