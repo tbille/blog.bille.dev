@@ -43,7 +43,7 @@
         <meta property="og:site_name" content="Toto's Blog"/>
         <meta property="og:type" content="website"/>
         <meta property="og:description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}"/>
-        <meta property="og:image" content="" />
+        <meta property="og:image" content="{{ site.url }}/media/logo_square.png" />
         <meta property="og:url" content="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}" />
         <meta property="twitter:card" content="summary_large_image" />
         <meta property="twitter:site" content="@totostache" />
@@ -61,17 +61,19 @@
         <header id="navigation" class="p-navigation is-dark">
         <div class="p-navigation__row">
             <div class="p-navigation__banner">
-            <a href="#navigation" class="p-navigation__toggle--open" title="menu">Menu</a>
-            <a href="#navigation-closed" class="p-navigation__toggle--close" title="close menu">Close menu</a>
+                <div class="p-navigation__logo">
+                    <a class="p-navigation__item" href="/">
+                        <img class="p-navigation__image" src="/media/logo_white.png" alt="" width="95">
+                    </a>
+                </div>
+                <a href="#navigation" class="p-navigation__toggle--open" title="menu">Menu</a>
+                <a href="#navigation-closed" class="p-navigation__toggle--close" title="close menu">Close menu</a>
             </div>
             <nav class="p-navigation__nav">
             <span class="u-off-screen">
                 <a href="#main-content">Jump to main content</a>
             </span>
             <ul class="p-navigation__items" role="menu">
-                <li class="p-navigation__item is-selected" role="menuitem">
-                    <a class="p-navigation__link" href="/">Bille.dev</a>
-                </li>
                 <li class="p-navigation__link" role="menuitem">
                     <a class="p-navigation__link" href="/about">About</a>
                 </li>
