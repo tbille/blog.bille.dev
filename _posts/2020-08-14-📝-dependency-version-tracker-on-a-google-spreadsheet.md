@@ -11,7 +11,7 @@ In my work I manage a lot of GitHub repositories that share the same [npm](https
 To improve this situation I wrote a [simple Google Script](https://gist.github.com/tbille/7b859620b697b1209d321b7e231273ad) that does a few things:
 
 * It pulls the latest version of the npm and PyPi packages that I define
-* It pulls the \`package.json\` and the \`requirements.txt\` of the listed projects
+* It pulls the `package.json` and the `requirements.txt` of the listed projects
 * It feeds all this data into a Google Spreadsheet
 
 This script runs every hours to update all the package versions. 
