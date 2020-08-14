@@ -18,10 +18,12 @@ This script runs every hours to update all the package versions.
 
 The only manual step is to change those variables in case I want to add a package:
 
-`var SHEET_NAME = "Version tracker"
+```
+var SHEET_NAME = "Version tracker"
 var SITES_RANGE = "A:A";
 var PYPI_RANGE = "B1:D2";
-var NPM_RANGE = "E1:G2";`
+var NPM_RANGE = "E1:G2";
+```
 
 After some colours and conditional formating tweaks, it allows me to have a quick overview of the versions that are used in the repositories that I am watching.
 
