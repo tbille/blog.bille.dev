@@ -73,6 +73,16 @@
         <meta name="msapplication-tileimage" content="/media/favicon/ms-icon-144x144.png">
         <meta name="theme-color" content="#ffffff">
 
+	<script src="https://twemoji.maxcdn.com/v/latest/twemoji.min.js" crossorigin="anonymous"></script>
+	<style>
+		img.emoji {
+		   height: 1em;
+		   width: 1em;
+		   margin: 0 .05em 0 .1em;
+		   vertical-align: -0.1em;
+		}
+	</style>
+
     </head>
 
     <body>
@@ -130,5 +140,6 @@
                 </div>
             </nav>
         </footer>
+	<script>twemoji.parse(document.body)</script>
     </body>
 </html>
