@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How to watch Star Wars on GitHub infrastructure?
+title: 🚀 How to watch Star Wars on GitHub infrastructure?
 summary: Get a MacOS or Linux shell, for free, in around 2 minutes with fastmac
 date: 2020-09-19T11:27:15.983Z
 ---
