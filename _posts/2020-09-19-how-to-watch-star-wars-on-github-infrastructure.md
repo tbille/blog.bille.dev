@@ -33,7 +33,7 @@ You can now open a new tab or a terminal and access via SSH the image that you c
 
 Now the question that **EVERYONE** wonders.
 
-> Can I watch Star Wars from GitHub's infrastructure?
+> ***Can I watch Star Wars from GitHub's infrastructure??????***
 
 ![Star wars logo](/assets/uploads/starwars.png)
 
@@ -57,5 +57,7 @@ runner@fv-az50:~/work/fastmac/fastmac$ telnet towel.blinkenlights.nl
 ![Star Wars Asciimation](/assets/uploads/starwars_asciiart.png)
 
 😍 See you in 121 minute! (the actual animation is ~20 minutes)
+
+Here you are this a complicated way of watching Star Wars: Episode IV – A New Hope via telnet on GitHub's infrastructure. But an easy way to get a shell working super fast.
 
 ⚠️ Don't forget to \`Cancel workflow\` once you are done having fun.
